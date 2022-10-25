@@ -1,0 +1,14 @@
+data:extend{
+  {
+    type="custom-input",
+    name="buffer-combinator-escape",
+    key_sequence="",
+    linked_game_control="toggle-menu",
+  },
+  {
+    type="custom-input",
+    name="buffer-combinator-close",
+    key_sequence="",
+    linked_game_control="confirm-gui",
+  },
+}

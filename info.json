@@ -1,0 +1,9 @@
+{
+  "name": "puppy-buffer-combinator",
+  "version": "0.1.0",
+  "title": "Puppy's Buffer Combinator",
+  "author": "Puppy",
+  "factorio_version": "1.1",
+  "dependencies": ["base >= 1.1", "flib > 0.9.2"],
+  "description": "A UPS-free blueprintable constant combinator for buffers."
+}
