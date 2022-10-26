@@ -14,3 +14,6 @@ Can't prevent the user from picking something that's not an item or a fluid.
 ## Current status
 
 This is the first release of my first mod, although I've stolen a lot of code from people more experienced than me. It works as far as I've tested it which is strictly not very much. If you encounter any issues, please raise a GH issue.
+
+## Credits
+Kryojenik's LTN Combinator; got me started with a lot of the basics and a couple bits are still mostly copied from there.
