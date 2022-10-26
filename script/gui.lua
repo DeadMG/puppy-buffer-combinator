@@ -58,12 +58,12 @@ function createWindow(player_index, entity)
         end
         
         dialogState.tank_count = entityState.tank_count
-        if entityState.tank_count > 0 then        
+        if entityState.tank_count ~= 0 then        
             dialog.tank_count.text = tostring(entityState.tank_count)
         end
         
         dialogState.stack_count = entityState.stack_count
-        if entityState.stack_count > 0 then
+        if entityState.stack_count ~= 0 then
             dialog.stack_count.text = tostring(entityState.stack_count)       
         end        
     end

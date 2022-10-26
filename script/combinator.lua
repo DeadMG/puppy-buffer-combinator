@@ -10,14 +10,14 @@ function combinator.applyStateToEntity(entity)
     if entityState.item_type then
         if entityState.item_type.type == "item" then 
             local prototype = game.item_prototypes[entityState.item_type.name]
-            if prototype and entityState.stack_count > 0 then 
+            if prototype and entityState.stack_count ~= 0 then 
                 behaviour.set_signal(1, { signal = entityState.item_type, count = entityState.stack_count * prototype.stack_size })
             else
                 behaviour.set_signal(1, nil)
             end
         end
         if entityState.item_type.type == "fluid" then
-            if entityState.tank_count > 0 then
+            if entityState.tank_count ~= 0 then
                 behaviour.set_signal(1, { signal = entityState.item_type, count = entityState.tank_count })
             else
                 behaviour.set_signal(1, nil)
