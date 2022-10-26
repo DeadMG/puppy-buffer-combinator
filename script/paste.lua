@@ -155,7 +155,7 @@ function onPrebuild(player_index, position, flippedHorizontally, flippedVericall
     -- or height.
     local entities = blueprint.get_blueprint_entities()
     
-    if #entities == 0 then return end
+    if entities == nil or #entities == 0 then return end
     
     -- First we need to get a bounding box for the blueprint
     local boundingBox = getBoundingBox(entities)
